@@ -18,6 +18,13 @@ export default {
       fontFamily: {
         sans: ['"Red Hat Text"', 'sans-serif'],
       },
+      fontSize: {
+        'preset-1': ['40px', { lineHeight: '120%', letterSpacing: '0px', fontWeight: '700' }],
+        'preset-2': ['24px', { lineHeight: '125%', letterSpacing: '0px', fontWeight: '700' }],
+        'preset-3': ['16px', { lineHeight: '150%', letterSpacing: '0px', fontWeight: '600' }],
+        'preset-4': ['14px', { lineHeight: '150%', letterSpacing: '0px', fontWeight: '400' }],
+        'preset-4-bold': ['14px', { lineHeight: '150%', letterSpacing: '0px', fontWeight: '600' }],
+      },
     },
   },
   plugins: [],

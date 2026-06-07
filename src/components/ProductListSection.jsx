@@ -4,11 +4,11 @@ import ProductCard from './ProductCard'
 function ProductListSection({ cartItems, onAdd, onIncrement, onDecrement }) {
   return (
     <section aria-labelledby="desserts-heading">
-      <h1 id="desserts-heading" className="mb-6 text-[2rem] font-bold text-rose-900">
+      <h1 id="desserts-heading" className="mb-8 text-preset-1 text-rose-900">
         Desserts
       </h1>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-6">
         {data.map((product) => {
           const cartItem = cartItems.find((item) => item.name === product.name)
           const quantity = cartItem ? cartItem.quantity : 0

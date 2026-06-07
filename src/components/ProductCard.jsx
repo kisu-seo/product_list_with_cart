@@ -8,14 +8,13 @@ function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
         <img
           src={imageBase}
           alt={product.name}
-          className={`w-full rounded-xl object-cover ${
-            isInCart ? 'border-2 border-red' : ''
-          }`}
+          className={`w-full rounded-lg object-cover ${isInCart ? 'border-2 border-red' : ''
+            }`}
         />
 
         {isInCart ? (
           <div
-            className="absolute left-1/2 -bottom-5 flex w-[140px] -translate-x-1/2 items-center justify-between rounded-full bg-red px-2 py-2 text-white"
+            className="absolute left-1/2 -bottom-5 flex w-[160px] h-[44px] -translate-x-1/2 items-center justify-between rounded-full bg-red px-3 py-2 text-white"
             role="group"
             aria-label={`${product.name} 수량 조절`}
           >
@@ -27,7 +26,7 @@ function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
             >
               <img src="/assets/images/icon-decrement-quantity.svg" alt="" className="pointer-events-none" />
             </button>
-            <span aria-live="polite" className="text-sm font-medium">
+            <span aria-live="polite" className="text-preset-4-bold">
               {quantity}
             </span>
             <button
@@ -43,7 +42,7 @@ function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
           <button
             type="button"
             onClick={onAdd}
-            className="absolute left-1/2 -bottom-5 flex w-[140px] -translate-x-1/2 items-center justify-center gap-2 rounded-full border border-rose-300 bg-white px-4 py-2 text-sm font-semibold text-rose-900 shadow-sm"
+            className="absolute left-1/2 -bottom-5 flex w-[160px] h-[44px] -translate-x-1/2 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-rose-300 bg-white text-preset-4-bold text-rose-900 shadow-sm"
           >
             <img src="/assets/images/icon-add-to-cart.svg" alt="" />
             Add to Cart
@@ -52,9 +51,9 @@ function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
       </div>
 
       <div className="mt-7 flex flex-col">
-        <span className="text-sm text-rose-500">{product.category}</span>
-        <h2 className="text-base font-semibold text-rose-900">{product.name}</h2>
-        <span className="text-sm font-semibold text-red">${product.price.toFixed(2)}</span>
+        <span className="text-preset-4 text-rose-500">{product.category}</span>
+        <h2 className="text-preset-3 text-rose-900">{product.name}</h2>
+        <span className="text-preset-3 text-red">${product.price.toFixed(2)}</span>
       </div>
     </article>
   )
