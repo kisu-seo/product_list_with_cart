@@ -5,31 +5,62 @@
 The designs were created to the following widths:
 
 - Mobile: 375px
+- Tablet: 768px
 - Desktop: 1440px
-
-> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
 
 ## Colors
 
-- Red: hsl(14, 86%, 42%)
-- Green: hsl(159, 69%, 38%)
+- Red: #C73B0F
+- Green: #1EA575
 
-- Rose 50: hsl(20, 50%, 98%)
-- Rose 100: hsl(13, 31%, 94%)
-- Rose 300: hsl(14, 25%, 72%)
-- Rose 400: hsl(7, 20%, 60%)
-- Rose 500: hsl(12, 20%, 44%)
-- Rose 900: hsl(14, 65%, 9%)
+- Rose 50: #FCF8F6
+- Rose 100: #F5EEEC
+- Rose 300: #CAAFA7
+- Rose 400: #AD8A85
+- Rose 500: #87635A
+- Rose 900: #260F08
+
+- Black: #000000
+- White: #FFFFFF
 
 ## Typography
-
-### Body Copy
-
-- Font size (product names): 16px
 
 ### Font
 
 - Family: [Red Hat Text](https://fonts.google.com/specimen/Red+Hat+Text)
-- Weights: 400, 600, 700
+- Weights: 400 (Regular), 600 (Semi Bold), 700 (Bold)
 
-> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. The design file for this challenge also includes a design system and tablet layout to help you build a more accurate solution faster.
+### Text Presets
+
+- **Text Preset 1** (Red Hat Text Bold)
+  - Font Size: 40px
+  - Line Height: 120%
+  - Letter Spacing: 0px
+- **Text Preset 2** (Red Hat Text Bold)
+  - Font Size: 24px
+  - Line Height: 125%
+  - Letter Spacing: 0px
+- **Text Preset 3** (Red Hat Text Semi Bold)
+  - Font Size: 16px
+  - Line Height: 150%
+  - Letter Spacing: 0px
+- **Text Preset 4** (Red Hat Text Regular)
+  - Font Size: 14px
+  - Line Height: 150%
+  - Letter Spacing: 0px
+- **Text Preset 4 Bold** (Red Hat Text Semi Bold)
+  - Font Size: 14px
+  - Line Height: 150%
+  - Letter Spacing: 0px
+
+## Spacing
+
+- 1100: 88px
+- 500: 40px
+- 400: 32px
+- 300: 24px
+- 200: 16px
+- 150: 12px
+- 100: 8px
+- 50: 4px
+
