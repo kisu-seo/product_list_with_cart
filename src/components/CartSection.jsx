@@ -5,7 +5,7 @@ function CartSection({ cartItems, onRemove, onConfirm }) {
   return (
     <section
       aria-labelledby="cart-heading"
-      className="mt-8 rounded-2xl bg-white p-6"
+      className="mt-8 lg:mt-0 rounded-2xl bg-white p-6"
     >
       <h2 id="cart-heading" className="text-preset-2 text-red">
         Your Cart ({totalQuantity})
@@ -14,7 +14,7 @@ function CartSection({ cartItems, onRemove, onConfirm }) {
       {cartItems.length === 0 ? (
         <div className="flex flex-col items-center gap-4 pt-6 pb-0">
           <img src="/assets/images/illustration-empty-cart.svg" alt="" />
-          <p className="text-preset-4 text-rose-500">Your added items will appear here</p>
+          <p className="text-preset-4 font-bold text-rose-500 pb-4">Your added items will appear here</p>
         </div>
       ) : (
         <>

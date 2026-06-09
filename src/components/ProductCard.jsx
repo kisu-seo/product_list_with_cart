@@ -1,16 +1,23 @@
 function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
   const isInCart = quantity > 0
-  const imageBase = product.image.mobile.replace('./assets', '/assets')
+  const imageMobile = product.image.mobile.replace('./assets', '/assets')
+  const imageTablet = product.image.tablet.replace('./assets', '/assets')
+  const imageDesktop = product.image.desktop.replace('./assets', '/assets')
 
   return (
     <article className="flex flex-col">
       <div className="relative">
-        <img
-          src={imageBase}
-          alt={product.name}
-          className={`w-full rounded-lg object-cover ${isInCart ? 'border-2 border-red' : ''
+        <picture>
+          <source media="(min-width: 1028px)" srcSet={imageDesktop} />
+          <source media="(min-width: 768px)" srcSet={imageTablet} />
+          <img
+            src={imageMobile}
+            alt={product.name}
+            className={`w-full md:h-[212px] lg:w-[250.67px] lg:h-[240px] rounded-lg object-cover ${
+              isInCart ? 'border-2 border-red' : ''
             }`}
-        />
+          />
+        </picture>
 
         {isInCart ? (
           <div
@@ -50,7 +57,7 @@ function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
         )}
       </div>
 
-      <div className="mt-7 flex flex-col">
+      <div className="mt-[38px] flex flex-col">
         <span className="text-preset-4 text-rose-500">{product.category}</span>
         <h2 className="text-preset-3 text-rose-900">{product.name}</h2>
         <span className="text-preset-3 text-red">${product.price.toFixed(2)}</span>

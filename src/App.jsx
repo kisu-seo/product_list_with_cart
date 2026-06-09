@@ -42,7 +42,7 @@ function App() {
   }
 
   return (
-    <main className="mx-auto max-w-md p-6">
+    <main className="mx-auto max-w-md md:max-w-[768px] lg:max-w-[1216px] lg:my-[88px] lg:mx-[112px] p-6 md:p-10 lg:p-0 flex flex-col lg:flex-row lg:items-start lg:gap-8">
       <ProductListSection
         cartItems={cartItems}
         onAdd={handleAdd}

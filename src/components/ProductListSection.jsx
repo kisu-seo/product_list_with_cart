@@ -8,7 +8,7 @@ function ProductListSection({ cartItems, onAdd, onIncrement, onDecrement }) {
         Desserts
       </h1>
 
-      <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6 md:grid md:grid-cols-3 md:gap-x-6 md:gap-y-8">
         {data.map((product) => {
           const cartItem = cartItems.find((item) => item.name === product.name)
           const quantity = cartItem ? cartItem.quantity : 0
