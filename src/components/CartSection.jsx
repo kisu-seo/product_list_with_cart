@@ -14,6 +14,7 @@
  * 두 값 모두 cartItems 배열을 reduce()로 집계합니다.
  */
 import { formatPrice } from '../utils/format'
+import { BASE_URL } from '../utils/image'
 import EmptyCart from './EmptyCart'
 import CartItem from './CartItem'
 
@@ -60,7 +61,7 @@ function CartSection({ cartItems, onRemove, onConfirm }) {
 
           {/* 카본 중립(Carbon-Neutral) 배달 안내 배너 */}
           <div className="flex items-center justify-center gap-2 rounded-lg bg-rose-50 py-3 text-preset-4 text-rose-900">
-            <img src="/assets/images/icon-carbon-neutral.svg" alt="" />
+            <img src={`${BASE_URL}assets/images/icon-carbon-neutral.svg`} alt="" />
             <span>
               This is a <strong>carbon-neutral</strong> delivery
             </span>

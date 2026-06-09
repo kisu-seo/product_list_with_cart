@@ -12,7 +12,7 @@
  *    - quantity === 0: 'Add to Cart' 버튼 (흰색 아웃라인 스타일)
  *    - quantity > 0:  수량 조절 버튼 그룹 QuantityControl (붉은 배경)
  */
-import { resolveImagePath } from '../utils/image'
+import { resolveImagePath, BASE_URL } from '../utils/image'
 import QuantityControl from './QuantityControl'
 
 /**
@@ -70,7 +70,7 @@ function ProductCard({ product, quantity, onAdd, onIncrement, onDecrement }) {
             onClick={onAdd}
             className="absolute left-1/2 -bottom-5 flex w-[160px] h-[44px] -translate-x-1/2 items-center justify-center gap-2 whitespace-nowrap rounded-full border border-rose-300 bg-white text-preset-4-bold text-rose-900 shadow-sm"
           >
-            <img src="/assets/images/icon-add-to-cart.svg" alt="" />
+            <img src={`${BASE_URL}assets/images/icon-add-to-cart.svg`} alt="" />
             Add to Cart
           </button>
         )}

@@ -11,6 +11,7 @@
  * - 아이콘 이미지는 장식용이므로 alt를 빈 문자열로 설정하고, pointer-events-none으로 클릭 차단합니다.
  */
 import { formatPrice } from '../utils/format'
+import { BASE_URL } from '../utils/image'
 
 /**
  * @param {object}   props
@@ -43,7 +44,7 @@ function CartItem({ item, onRemove }) {
         className="flex h-5 w-5 items-center justify-center rounded-full border border-rose-400"
       >
         <img
-          src="/assets/images/icon-remove-item.svg"
+          src={`${BASE_URL}assets/images/icon-remove-item.svg`}
           alt=""
           className="pointer-events-none"
         />

@@ -18,6 +18,8 @@
  * @param {function} props.onDecrement  - '-' 버튼 클릭 핸들러
  * @param {function} props.onIncrement  - '+' 버튼 클릭 핸들러
  */
+import { BASE_URL } from '../utils/image'
+
 function QuantityControl({ productName, quantity, onDecrement, onIncrement }) {
   return (
     // 이미지 하단 중앙에 absolute로 배치 (-bottom-5, left-1/2, -translate-x-1/2)
@@ -34,7 +36,7 @@ function QuantityControl({ productName, quantity, onDecrement, onIncrement }) {
         className="flex h-6 w-6 items-center justify-center rounded-full border border-white"
       >
         <img
-          src="/assets/images/icon-decrement-quantity.svg"
+          src={`${BASE_URL}assets/images/icon-decrement-quantity.svg`}
           alt=""
           className="pointer-events-none"
         />
@@ -53,7 +55,7 @@ function QuantityControl({ productName, quantity, onDecrement, onIncrement }) {
         className="flex h-6 w-6 items-center justify-center rounded-full border border-white"
       >
         <img
-          src="/assets/images/icon-increment-quantity.svg"
+          src={`${BASE_URL}assets/images/icon-increment-quantity.svg`}
           alt=""
           className="pointer-events-none"
         />

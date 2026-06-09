@@ -16,6 +16,7 @@
  * - aria-labelledby: 모달 제목(h2)을 이 대화 상자의 접근 가능한 이름으로 지정합니다.
  */
 import { formatPrice } from '../utils/format'
+import { BASE_URL } from '../utils/image'
 import OrderSummaryItem from './OrderSummaryItem'
 
 /**
@@ -42,7 +43,7 @@ function OrderConfirmedModal({ cartItems, onStartNewOrder }) {
         {/* 모달 상단: 체크 아이콘, 제목, 부제목, 주문 내역 리스트 */}
         <div>
           {/* 주문 완료 체크 아이콘: 장식 이미지이므로 alt 빈 문자열 */}
-          <img src="/assets/images/icon-order-confirmed.svg" alt="" className="mb-[27px]" />
+          <img src={`${BASE_URL}assets/images/icon-order-confirmed.svg`} alt="" className="mb-[27px]" />
 
           <h2 id="order-confirmed-heading" className="text-preset-1 text-rose-900">
             Order Confirmed
